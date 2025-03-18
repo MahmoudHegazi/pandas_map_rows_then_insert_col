@@ -29,19 +29,21 @@ file_to_update = {
 
 # this the file have the new columns need to mapped to updater file rows or df (use list not process serios within loop or full df repaint +reflow, update df with df[]) 
 file_to_map = {
-  "saymbols": ['ABB', 'CDD', 'c'],
-  "price": [12.25, 1, 2]
+  "saymbols": ['ABB', 'ABB', 'ABB'],
+  "price": [12.25, 1, 2],
+  "ok":['dynamic', 'true', 'add_row']
 }
 
 #load data into a DataFrame object:
 updater = pd.DataFrame(file_to_update)
 
+# add as many as needed and even make later callback
 mapper = pd.DataFrame(file_to_map)
-print(map_rows_then_insert_col(updater, mapper, ['saymbols', 'saymbols'], 'price'))
-
+print(map_rows_then_insert_columns(updater, mapper, ['saymbols', 'saymbols'], ['price', 'ok']))
 
 print(updater)
 print(mapper)
+
 ```
 
 
@@ -61,5 +63,5 @@ file_to_map = {
 updater = pd.DataFrame(file_to_update)
 
 mapper = pd.DataFrame(file_to_map)
-print(map_rows_then_insert_col(updater, mapper, ['saymbols', 'saymbols_2'], 'price'))
+print(map_rows_then_insert_col(updater, mapper, ['saymbols', 'saymbols_2'], ['price']))
 ```
