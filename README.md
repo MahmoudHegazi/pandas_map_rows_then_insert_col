@@ -4,3 +4,15 @@ it's dynamic based on your argment will detect your need and process excat same 
 
 ## update v2
 will provide callback so you can control even new added value ex calcaute by other cols or other args while mapping or just return exact matched 1 col
+
+
+
+![image](https://github.com/user-attachments/assets/50886713-be55-4185-88e5-86215c66054f)
+
+![image](https://github.com/user-attachments/assets/bf7503b1-2587-4885-83cc-6115ae315966)
+
+![image](https://github.com/user-attachments/assets/956df466-f982-41f2-9db1-3f3e87b59fd7)
+
+![image](https://github.com/user-attachments/assets/29024ec4-0135-41cb-b6a2-25f5ab48da21)
+
+![image](https://github.com/user-attachments/assets/b3024e6c-f88c-48aa-8b99-22e6317db20a)
