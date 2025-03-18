@@ -17,6 +17,9 @@ will provide callback so you can control even new added value ex calcaute by oth
 
 ![image](https://github.com/user-attachments/assets/b3024e6c-f88c-48aa-8b99-22e6317db20a)
 
+### notice the relation key needed for mapping and it dynamic name ex in excel file name id and in excel 2 called product_id
+![image](https://github.com/user-attachments/assets/bc60f490-4306-4148-832f-2ff447910cfe)
+
 
 calls
 
