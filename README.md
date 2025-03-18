@@ -16,3 +16,50 @@ will provide callback so you can control even new added value ex calcaute by oth
 ![image](https://github.com/user-attachments/assets/29024ec4-0135-41cb-b6a2-25f5ab48da21)
 
 ![image](https://github.com/user-attachments/assets/b3024e6c-f88c-48aa-8b99-22e6317db20a)
+
+
+calls
+
+```python
+
+file_to_update = {
+  "saymbols": ['ABB', 'ABB', 'ABB'],
+  "duration": [50, 40, 45]
+}
+
+# this the file have the new columns need to mapped to updater file rows or df (use list not process serios within loop or full df repaint +reflow, update df with df[]) 
+file_to_map = {
+  "saymbols": ['ABB', 'CDD', 'c'],
+  "price": [12.25, 1, 2]
+}
+
+#load data into a DataFrame object:
+updater = pd.DataFrame(file_to_update)
+
+mapper = pd.DataFrame(file_to_map)
+print(map_rows_then_insert_col(updater, mapper, ['saymbols', 'saymbols'], 'price'))
+
+
+print(updater)
+print(mapper)
+```
+
+
+```
+file_to_update = {
+  "saymbols": ['ABB', 'ABB', 'ABB'],
+  "duration": [50, 40, 45]
+}
+
+# this the file have the new columns need to mapped to updater file rows or df (use list not process serios within loop or full df repaint +reflow, update df with df[]) 
+file_to_map = {
+  "saymbols_2": ['ABB', 'CDD', 'c'],
+  "price": [12.25, 1, 2]
+}
+
+#load data into a DataFrame object:
+updater = pd.DataFrame(file_to_update)
+
+mapper = pd.DataFrame(file_to_map)
+print(map_rows_then_insert_col(updater, mapper, ['saymbols', 'saymbols_2'], 'price'))
+```
